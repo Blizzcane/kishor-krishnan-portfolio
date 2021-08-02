@@ -1,13 +1,12 @@
 main {
   padding: 0;
-    text-shadow: 2px 2px 8px  #000000;
-
+  text-shadow: 2px 2px 8px #000000;
 }
 
 body {
   background-color: #339989;
-  color: #FFFAFB;
-  font-family: 'Chakra Petch', sans-serif;
+  color: #fffafb;
+  font-family: "Chakra Petch", sans-serif;
   width: 100%;
   margin: 0px;
 }
@@ -18,10 +17,10 @@ section {
 }
 
 section.darker {
-  background-color: #2B2C28;
+  background-color: #2b2c28;
   padding: 20px;
   margin-top: 20px;
-  }
+}
 
 header {
   background-color: #131515;
@@ -29,17 +28,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-
 header h1 {
-  color: #FFFAFB;
+  color: #fffafb;
   text-align: center;
   font-size: 40px;
   padding-top: 20px;
   margin: 0;
-
 }
 
 header nav {
@@ -56,8 +52,8 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: #FFFAFB;
-  text-shadow: 2px 2px 8px  #7DE2D1;
+  color: #fffafb;
+  text-shadow: 2px 2px 8px #7de2d1;
   text-decoration: none;
   margin: 0 20px 0 0;
 }
@@ -74,7 +70,7 @@ header nav ul li:last-child a {
 
 main img {
   width: 100%;
-  box-shadow: 5px 4px 12px -2px rgba(0,0,0,0.88);
+  box-shadow: 5px 4px 12px -2px rgba(0, 0, 0, 0.88);
 }
 
 .round {
@@ -82,7 +78,7 @@ main img {
 }
 
 footer {
-  background-color: #2B2C28;
+  background-color: #2b2c28;
   margin-top: 40px;
   margin-bottom: 0;
   display: flex;
@@ -93,7 +89,7 @@ footer img {
 }
 footer p {
   flex-direction: row;
-  color: #FFFAFB;
+  color: #fffafb;
   text-align: center;
   padding: 0 10px;
   margin: 20px;
@@ -104,8 +100,6 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-
-
 
 .item {
   flex: 1;
@@ -135,27 +129,31 @@ footer p {
     height: 12px;
     border: 0;
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-}
+  }
   .group {
     flex-direction: row;
     align-items: center;
   }
-    section {
-  max-width: 70%;
-  margin: 0 auto;
+
+  .group-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  section {
+    max-width: 70%;
+    margin: 0 auto;
   }
   h2 {
     text-align: left !important;
   }
 }
 
-
-//form css
+/* form css */
 form label {
   display: block;
   font-size: 18px;
   margin-bottom: 5px;
-  color: black;
+  color: rgb(170, 170, 170);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -176,36 +174,43 @@ form div {
 }
 
 form button {
-    padding: 2px 20px;
-    border-radius: 15px;
-    border: 1;
-    font-family: Tahoma;
-    font-size: 16px;
-    background: #fff;
-    color: #000; 
-    margin: 0 8px 10px 0;
+  padding: 2px 20px;
+  border-radius: 15px;
+  border: 1;
+  font-family: Tahoma;
+  font-size: 16px;
+  background: #fff;
+  color: #000;
+  margin: 0 8px 10px 0;
 }
 
 p {
- font-family: 'Chakra Petch', sans-serif;
- line-height: 1.5em;
- font-size: 20px;
- margin-bottom: 0;
- color: white;
- 
+  font-family: "Chakra Petch", sans-serif;
+  line-height: 1.5em;
+  font-size: 20px;
+  margin-bottom: 0;
+  color: white;
 }
 
 h2 {
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   color: white;
   text-decoration: underline;
   text-align: center;
 }
 
-main  a:link { color: rgb(61, 141, 187); }
-main  a:visited { color: #FFFAFB; }
-main  a:hover { color: #00ffc8; }
-a:active { color: #ffa04d; }
+main a:link {
+  color: rgb(61, 141, 187);
+}
+main a:visited {
+  color: #fffafb;
+}
+main a:hover {
+  color: #00ffc8;
+}
+a:active {
+  color: #ffa04d;
+}
 
 footer {
   display: flex;
@@ -214,12 +219,12 @@ footer {
   align-items: center;
 }
 
-footer p{
+footer p {
   flex: 1;
 }
 
-button{
-  font-family: 'Chakra Petch', sans-serif;
+button {
+  font-family: "Chakra Petch", sans-serif;
   top: 50%;
   left: 50%;
   width: 130px;
@@ -233,5 +238,38 @@ button{
 }
 
 button:hover {
-border: 3px solid rgb(45, 255, 220);
+  border: 3px solid rgb(45, 255, 220);
+}
+
+/* animations */
+.slide-in-blurred-left {
+  animation: slide-in-blurred-left 0.8s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
+}
+.slide-in-blurred-right {
+  animation: slide-in-blurred-right 0.8s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
+}
+ 
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.yellow {
+  background-color: lightyellow;
+}
+.red {
+  background-color: lightcoral;
+}
+.blue {
+  background-color: lightblue;
+}
+.green {
+  background-color: lightgreen;
 }
