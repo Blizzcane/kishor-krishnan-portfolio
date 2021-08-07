@@ -9,15 +9,13 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
       rel="stylesheet"
-    /> 
+    />
   </head>
 
   <body>
-    <header>
-      <div class="logo">
-        <h1>Kishor Krishnan</h1>
-      </div>
-      <nav>
+    <header class="header">
+      <h1 class="logo headline">Kishor Krishnan</h1>
+      <nav class="menu">
         <ul id="menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -31,15 +29,15 @@
       <!-- Introduction -->
       <section id="home">
         <div class="group">
-          <div class="item">
+          <div class="item slide-in-left">
             <!--image--><img
               class="round"
               id="profilePic"
               alt="profile picture"
-              src="images/profile.jpg"
+              src="images/profile.png"
             />
           </div>
-          <div class="item-double">
+          <div class="item-double slide-in-right">
             <!--two paragraph intro-->
             <p>
               I am a web developer currently based in Chicago, Illinois. I have
@@ -95,7 +93,7 @@
 
       <hr />
       <!-- Projects -->
-      <section id="projects">
+      <section id="projects" class="projects">
         <h2>Projects</h2>
         <div class="group-projects">
           <div class="item">
@@ -118,6 +116,57 @@
             />
             <h3>WeLoveMovies</h3>
             <p>Built an API using RESTful design principles.</p>
+          </div>
+        </div>
+        <div class="container" id="blur">
+          <div class="card">
+            <div class="box" onclick="toggle()">
+              <div class="content">
+                <h3>Flashcard-o-matic App</h3>
+                <img
+                  src="images/HomePage.png"
+                  alt="Flashcard-o-matic app"
+                  class="card-image"
+                />
+                <h3 class="appear">View Project</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <h3>WeLoveMovies</h3>
+                <p>Built an API using RESTful design principles.</p>
+                <h3 class="appear">View Project</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <h3>Restaurant Reservations</h3>
+                <p>To be built</p>
+                <h3 class="appear">View Project</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="popup">
+          <div class="content">
+            <div class="item">
+              <img
+                src="images/HomePage.png"
+                alt="Flashcard-o-matic app"
+                class="rounded"
+              />
+              <h3>Flashcard-o-matic App</h3>
+              <p>
+                This application can be used to create decks of flash cards to
+                help study different subjects.
+              </p>
+              <button onclick="toggle()">Close</button>
+            </div>
           </div>
         </div>
       </section>
@@ -171,7 +220,7 @@
             </p>
           </div>
         </div>
-      </section> 
+      </section>
     </main>
 
     <footer>
@@ -188,7 +237,13 @@
         /></a>
       </p>
     </footer>
-
-    <script src="script.js"></script>
+    <script type="text/javascript">
+      function toggle() {
+        let blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        let popup = document.getElementById("popup");
+        popup.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

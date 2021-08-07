@@ -1,6 +1,7 @@
 main {
   padding: 0;
   text-shadow: 2px 2px 8px #000000;
+  
 }
 
 body {
@@ -17,13 +18,13 @@ section {
 }
 
 section.darker {
-  background-color: #2b2c28;
+  background-color: #2a2b2f;
   padding: 20px;
   margin-top: 20px;
 }
 
 header {
-  background-color: #131515;
+  background-color: #2a2b2f;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -70,7 +71,7 @@ header nav ul li:last-child a {
 
 main img {
   width: 100%;
-  box-shadow: 5px 4px 12px -2px rgba(0, 0, 0, 0.88);
+  /* box-shadow: 5px 4px 12px -2px rgba(0, 0, 0, 0.88); */
 }
 
 .round {
@@ -113,7 +114,27 @@ footer p {
   padding: 20px;
 }
 
+.about-container {
+  width: 80%;
+  height: 330px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -7% auto 20px auto;
+  position: relative;
+}
+
 @media all and (min-width: 800px) {
+  /* animations */
+  .slide-in-left {
+    animation: slide-in-blurred-left 1s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
+  }
+  .slide-in-right {
+    animation: slide-in-blurred-right 1s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
+  }
+
+  /* css */
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -145,6 +166,111 @@ footer p {
   }
   h2 {
     text-align: left !important;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 40px 0;
+  }
+
+  .container .card {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 20px;
+  }
+
+  .container .card .box {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background: #2a2b2f;
+    border: 2px solid #1e1f23;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    overflow: hidden;
+  }
+ 
+
+  .container .card .box:hover {
+    transform: translateY(-50px);
+    box-shadow: 0 40px 50px rgba(0, 0, 0, 0.5);
+  } 
+
+  .container .card .box .content {
+    padding: 20px;
+    text-align: center;
+  }
+  .container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .container .card .box .content h3 {
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.74);
+    z-index: 1;
+    transition: 0.5s;
+  }
+  .container .card .box .content p {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    transition: 0.5s;
+  }
+  .container .card .box .content img {
+    align-items: center;
+    transition: 0.5s;
+    
+    border-radius:8px;
+  }
+  .container .card .box .content button {
+    padding: 8px 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-weight: 400;
+    color: #fff;
+    background: #2196f3;
+  }
+  #popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    background: #2a2b2f;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  #popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .container#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
   }
 }
 
@@ -239,37 +365,4 @@ button {
 
 button:hover {
   border: 3px solid rgb(45, 255, 220);
-}
-
-/* animations */
-.slide-in-blurred-left {
-  animation: slide-in-blurred-left 0.8s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
-}
-.slide-in-blurred-right {
-  animation: slide-in-blurred-right 0.8s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
-}
- 
-
-.tag {
-  opacity: 0;
-  transform: translate(0, 10vh);
-  transition: all 1s;
-}
-
-.tag.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-.yellow {
-  background-color: lightyellow;
-}
-.red {
-  background-color: lightcoral;
-}
-.blue {
-  background-color: lightblue;
-}
-.green {
-  background-color: lightgreen;
 }
