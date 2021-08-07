@@ -95,40 +95,20 @@
       <!-- Projects -->
       <section id="projects" class="projects">
         <h2>Projects</h2>
-        <div class="group-projects">
-          <div class="item">
-            <img
-              src="images/HomePage.png"
-              alt="Flashcard-o-matic app"
-              class="rounded"
-            />
-            <h3>Flashcard-o-matic App</h3>
-            <p>
-              This application can be used to create decks of flash cards to
-              help study different subjects.
-            </p>
-          </div>
-          <div class="item">
-            <img
-              src="images/WeLoveMovies.PNG"
-              alt="WeLoveMovies App"
-              class="rounded"
-            />
-            <h3>WeLoveMovies</h3>
-            <p>Built an API using RESTful design principles.</p>
-          </div>
-        </div>
         <div class="container" id="blur">
           <div class="card">
-            <div class="box" onclick="toggle()">
+            <div class="box" onclick="toggle('.flashcard')">
               <div class="content">
-                <h3>Flashcard-o-matic App</h3>
+                <h3>Flashcard-o-matic</h3>
                 <img
                   src="images/HomePage.png"
-                  alt="Flashcard-o-matic app"
+                  alt="Flashcard-o-matic Preview"
                   class="card-image"
                 />
-                <h3 class="appear">View Project</h3>
+                <h3 class="view">View Project</h3>
+                <p class="reverse-view">
+                  Front-end React app to help users study decks of flash cards.
+                </p>
               </div>
             </div>
           </div>
@@ -136,8 +116,12 @@
             <div class="box">
               <div class="content">
                 <h3>WeLoveMovies</h3>
-                <p>Built an API using RESTful design principles.</p>
-                <h3 class="appear">View Project</h3>
+                <img
+                  src="images/WeLoveMovies.PNG"
+                  alt="WeLoveMovies Preview"
+                  class="card-image"
+                />
+                <h3 class="view">View Project</h3>
               </div>
             </div>
           </div>
@@ -146,13 +130,14 @@
               <div class="content">
                 <h3>Restaurant Reservations</h3>
                 <p>To be built</p>
-                <h3 class="appear">View Project</h3>
+                <h3 class="view">View Project</h3>
               </div>
             </div>
           </div>
         </div>
 
-        <div id="popup">
+        <!-- popup project details -->
+        <div class="flashcard" id="popup">
           <div class="content">
             <div class="item">
               <img
@@ -165,12 +150,13 @@
                 This application can be used to create decks of flash cards to
                 help study different subjects.
               </p>
-              <button onclick="toggle()">Close</button>
+              <button onclick="toggle('.flashcard')">Close</button>
             </div>
           </div>
         </div>
       </section>
       <hr />
+      
       <!-- Contact -->
       <section id="contact" class="darker">
         <h2>Contact</h2>
@@ -238,10 +224,11 @@
       </p>
     </footer>
     <script type="text/javascript">
-      function toggle() {
+      function toggle(project) {
+        console.log(project);
         let blur = document.getElementById("blur");
         blur.classList.toggle("active");
-        let popup = document.getElementById("popup");
+        let popup = document.querySelector(project);
         popup.classList.toggle("active");
       }
     </script>
