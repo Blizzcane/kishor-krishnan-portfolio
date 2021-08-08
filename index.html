@@ -105,15 +105,15 @@
                   alt="Flashcard-o-matic Preview"
                   class="card-image"
                 />
-                <h3 class="view">View Project</h3>
                 <p class="reverse-view">
                   Front-end React app to help users study decks of flash cards.
                 </p>
+                <h3 class="view">View Project</h3>
               </div>
             </div>
           </div>
           <div class="card">
-            <div class="box">
+            <div class="box" onclick="toggle('.welovemovies')">
               <div class="content">
                 <h3>WeLoveMovies</h3>
                 <img
@@ -121,7 +121,9 @@
                   alt="WeLoveMovies Preview"
                   class="card-image"
                 />
-                <h3 class="view">View Project</h3>
+                <p class="reverse-view">
+                  Built an API using RESTful design principles.
+                </p> 
               </div>
             </div>
           </div>
@@ -145,18 +147,77 @@
                 alt="Flashcard-o-matic app"
                 class="rounded"
               />
-              <h3>Flashcard-o-matic App</h3>
               <p>
-                This application can be used to create decks of flash cards to
-                help study different subjects.
+                This application can be used to create and edit decks of flash
+                cards to help users study. Created with React router and React
+                Hooks such as useEffect, useState.
               </p>
-              <button onclick="toggle('.flashcard')">Close</button>
+              <div class="details">
+                <div>
+                  <ul>
+                    <li>
+                      <p style="text-align: left">create-react-app</p>
+                    </li>
+                    <li>
+                      <p style="text-align: left">Bootstrap v5</p>
+                    </li>
+                  </ul>
+                </div>
+                <div style="display: flex; flex-direction: row">
+                  <a
+                    href="https://flashcards-project-neon.vercel.app/"
+                    target="blank"
+                    ><span>Launch Site</span></a
+                  >
+                  <a
+                    href="https://github.com/Blizzcane/Flashcards-Project"
+                    target="blank"
+                    ><span>View Code</span></a
+                  >
+                </div>
+              </div>
+
+              <button onclick="toggle('.flashcard')"><span>Close</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="welovemovies" id="popup">
+          <div class="content">
+            <div class="item">
+              <img
+                src="images/WeLoveMovies.PNG"
+                alt="welovemovies preview"
+                class="rounded"
+              />
+              <p>Built an API using RESTful design principles.</p>
+              <p style="margin-bottom: 20px;">
+                 Node.js &bull; Knex.js &bull; Express.js &bull;
+                PostgreSQL &bull; CORS
+              </p>
+              <div class="details">
+                <div style="display: flex; flex-direction: row">
+                  <a
+                    href="https://starter-movie-front-end-sandy.vercel.app/"
+                    target="blank"
+                    ><span>Launch Site</span></a
+                  >
+                  <a
+                    href="https://github.com/Blizzcane/WeLoveMovies"
+                    target="blank"
+                    ><span>View Code</span></a
+                  >
+                </div>
+              </div>
+
+              <button onclick="toggle('.welovemovies')">
+                <span>Close</span>
+              </button>
             </div>
           </div>
         </div>
       </section>
       <hr />
-      
+
       <!-- Contact -->
       <section id="contact" class="darker">
         <h2>Contact</h2>
@@ -225,10 +286,17 @@
     </footer>
     <script type="text/javascript">
       function toggle(project) {
-        console.log(project);
         let blur = document.getElementById("blur");
-        blur.classList.toggle("active");
         let popup = document.querySelector(project);
+        // prevents scrolling while popup is open
+
+        console.log(popup);
+        if (!blur.classList.value.includes("active")) {
+          document.getElementsByTagName("body")[0].style.overflow = "hidden";
+        } else {
+          document.getElementsByTagName("body")[0].style.overflow = "visible";
+        }
+        blur.classList.toggle("active");
         popup.classList.toggle("active");
       }
     </script>
