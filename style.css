@@ -16,10 +16,37 @@ section {
   padding: 0 20px;
 }
 
+headline {
+  position: relative;
+  text-align: center;
+  
+}
+
+.houdini {
+  visibility: hidden;
+  opacity: 0;
+}
+.centeredText {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
 section.darker {
   background-color: #2a2b2f;
   padding: 20px;
   margin-top: 20px;
+  background: #2a2b2f;
+  border: 2px solid #1e1f23;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 header {
@@ -78,7 +105,7 @@ main img {
 }
 
 footer {
-  background-color: #2b2c28;
+  background-color: #2a2b2f;
   margin-top: 40px;
   margin-bottom: 0;
   display: flex;
@@ -245,7 +272,7 @@ footer p {
   transition: all 0.15s ease-in-out;
   color: white;
   text-decoration: none;
-  padding:  10px;  
+  padding: 10px;
   text-transform: uppercase;
 }
 #popup a:hover {
@@ -261,7 +288,7 @@ footer p {
   position: relative;
   z-index: 1;
 }
-#popup button{
+#popup button {
   background-color: transparent;
   border: 2px solid #37f1d5;
   border-radius: 20px;
@@ -272,7 +299,7 @@ footer p {
   color: white;
   text-decoration: none;
   padding-top: 5px;
-  padding-bottom: 10px ;
+  padding-bottom: 10px;
   text-transform: uppercase;
 }
 #popup button:hover {
@@ -294,8 +321,8 @@ footer p {
 }
 .details button {
   margin: 10px;
-}   
- 
+}
+
 /* form css */
 form label {
   display: block;
@@ -308,6 +335,7 @@ form label {
 form input,
 form textarea {
   width: 100%;
+  height: 30px;
   margin-bottom: 20px;
 }
 
@@ -390,12 +418,9 @@ button:hover {
 }
 
 @media all and (min-width: 800px) {
-  /* animations */
-  .slide-in-left {
-    animation: slide-in-blurred-left 1s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
-  }
-  .slide-in-right {
-    animation: slide-in-blurred-right 1s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
+  .houdini {
+    visibility: visible;
+    opacity: 1;
   }
 
   /* css */
@@ -427,6 +452,28 @@ button:hover {
   section {
     max-width: 70%;
     margin: 0 auto;
+  }
+  section.darker {
+    background-color: #2a2b2f;
+    padding: 20px;
+    margin-top: 20px;
+    background: #2a2b2f;
+    border: 2px solid #1e1f23;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .centeredText {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    font-size: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   }
 
   /* project cards desktop view */
