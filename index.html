@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header show-web-only">
       <h1 class="logo headline">Kishor Krishnan</h1>
       <nav class="menu">
         <ul id="menu">
@@ -28,7 +28,7 @@
 
     <main>
       <!-- Introduction -->
-      <section id="home" style="margin-top: 0px">
+      <section id="home" style="margin-top: 0px" class="show-web-only">
         <div class="group">
           <div class="item headline">
             <div class="centeredText">
@@ -43,10 +43,14 @@
       </section>
       <hr class="houdini" />
       <!-- About me -->
-      <section id="about" class="darker">
-        <h2>About me</h2>
-        <div class="group">
-          <div class="item-double">
+      <section id="about"  >
+        <h2>About <img
+              class="about-me-image"
+              alt="kishor"
+              src="images/profile.png"
+            /></h2>
+        <div >
+            
             <p>
               I have always been passionate about coding. I am a person that
               thrives in a collaborative environment where I can use my skills
@@ -55,18 +59,8 @@
             <p>
               When I'm not coding, I spend my time painting. I have been drawing
               since I was young and recently have discovered the amazing world
-              of watercolor painting! I also enjoy flying my drone and taking
-              photographs. You can see examples of my photography on my
-              <a href="https://www.instagram.com/blizzcane">instagram</a>.
-            </p>
-          </div>
-          <div class="item">
-            <!--image--><img
-              class="round"
-              alt="kishor"
-              src="images/profile.png"
-            />
-          </div>
+              of watercolor painting!</a>.
+            </p> 
         </div>
       </section>
 
@@ -74,35 +68,18 @@
       <!-- Projects -->
       <section id="projects" class="projects">
         <h2>Projects</h2>
-        <div class="container" id="blur">
+        <div class="container" >
           <div class="card">
-            <div class="box" onclick="toggle('.flashcard')">
+            <div class="box" >
               <div class="content">
-                <h3>Flashcard-o-matic</h3>
-                <img
-                  src="images/HomePage.png"
-                  alt="Flashcard-o-matic Preview"
-                  class="card-image"
-                />
-                <p class="reverse-view">
-                  Front-end React app to help users study decks of flash cards.
-                </p>
-                <h3 class="view">View Project</h3>
+                <h3>Flashcard-o-matic</h3> 
               </div>
             </div>
           </div>
           <div class="card">
-            <div class="box" onclick="toggle('.welovemovies')">
+            <div class="box" >
               <div class="content">
                 <h3>WeLoveMovies</h3>
-                <img
-                  src="images/WeLoveMovies.PNG"
-                  alt="WeLoveMovies Preview"
-                  class="card-image"
-                />
-                <p class="reverse-view">
-                  Built an API using RESTful design principles.
-                </p>
               </div>
             </div>
           </div>
@@ -120,72 +97,12 @@
         <!-- popup project details -->
         <div class="flashcard" id="popup">
           <div class="content">
-            <div class="item">
-              <img
-                src="images/HomePage.png"
-                alt="Flashcard-o-matic app"
-                class="rounded"
-              />
-              <p>
-                This application can be used to create and edit decks of flash
-                cards to help users study. Created with React router and React
-                Hooks such as useEffect, useState.
-              </p>
-              <p>create-react-app &bull; Bootstrap v5</p>
-              <div class="details">
-                <div style="display: flex; flex-direction: row">
-                  <a
-                    href="https://flashcards-project-neon.vercel.app/"
-                    target="blank"
-                    ><span>Launch Site</span></a
-                  >
-                  <a
-                    href="https://github.com/Blizzcane/Flashcards-Project"
-                    target="blank"
-                    ><span>View Code</span></a
-                  >
-                </div>
-              </div>
 
-              <button onclick="toggle('.flashcard')"><span>Close</span></button>
-            </div>
           </div>
         </div>
         <div class="welovemovies" id="popup">
           <div class="content">
-            <div class="item">
-              <img
-                src="images/WeLoveMovies.PNG"
-                alt="welovemovies preview"
-                class="rounded"
-              />
-              <p>
-                Created a server to display responses and make changes to an API
-                connected to a PostgreSQL database. Built using:
-              </p>
-              <p style="margin-bottom: 20px">
-                Node.js &bull; Knex.js &bull; Express.js &bull; PostgreSQL
-                &bull; CORS
-              </p>
-              <div class="details">
-                <div style="display: flex; flex-direction: row">
-                  <a
-                    href="https://starter-movie-front-end-sandy.vercel.app/"
-                    target="blank"
-                    ><span>Launch Site</span></a
-                  >
-                  <a
-                    href="https://github.com/Blizzcane/WeLoveMovies"
-                    target="blank"
-                    ><span>View Code</span></a
-                  >
-                </div>
-              </div>
-
-              <button onclick="toggle('.welovemovies')">
-                <span>Close</span>
-              </button>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -265,22 +182,6 @@
           ><img src="images/linkedIcon.png"
         /></a>
       </p>
-    </footer>
-    <script type="text/javascript">
-      function toggle(project) {
-        let blur = document.getElementById("blur");
-        let popup = document.querySelector(project);
-        // prevents scrolling while popup is open
-
-        console.log(popup);
-        if (!blur.classList.value.includes("active")) {
-          document.getElementsByTagName("body")[0].style.overflow = "hidden";
-        } else {
-          document.getElementsByTagName("body")[0].style.overflow = "visible";
-        }
-        blur.classList.toggle("active");
-        popup.classList.toggle("active");
-      }
-    </script>
+    </footer> 
   </body>
 </html>
