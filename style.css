@@ -9,14 +9,24 @@ main {
   padding: 0;
   text-shadow: 2px 2px 8px #000000;
 }
+main img {
+  width: 100%;
+  /* box-shadow: 5px 4px 12px -2px rgba(0, 0, 0, 0.88); */
+}
 .show-print-only {
   display: none !important;
 }
 section {
-  margin-bottom: 100px;
-  padding: 0 20px;
+  width: 85%;
+  margin: 30px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
 }
 
+section h2 {
+  margin-bottom: 20px;
+}
 headline {
   position: relative;
   text-align: center;
@@ -80,7 +90,7 @@ header nav ul {
 
 header nav ul li a {
   color: #fffafb;
-  text-shadow: 2px 2px 8px #7de2d1;
+  /* text-shadow: 2px 2px 8px #7de2d1; */
   text-decoration: none;
   margin: 0 20px 0 0;
 }
@@ -95,13 +105,14 @@ header nav ul li:last-child a {
   margin-right: 0;
 }
 
-main img {
-  width: 100%;
-  /* box-shadow: 5px 4px 12px -2px rgba(0, 0, 0, 0.88); */
-}
-
 .round {
   border-radius: 30px;
+}
+
+.project-container{
+  display: block;
+  margin-bottom: 5%;
+  margin-top: 2%; 
 }
 
 footer {
@@ -138,6 +149,10 @@ footer p {
   flex: 2;
   margin: 0;
   padding: 20px;
+}
+.projects {
+  margin-top: 30px;
+  display: block;
 }
 
 /* form css */
@@ -190,16 +205,10 @@ h2 {
   color: white;
   text-align: left;
 }
-.about-me-image {
-  float: right;
-  margin-right: 20px;
-  margin-left: 10px;
-  width: 32%; 
-}
 
 #about p {
-   
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 main a:link {
@@ -244,13 +253,21 @@ button:hover {
   border: 3px solid rgb(45, 255, 220);
 }
 
+
+
+
 @media all and (min-width: 800px) {
   .houdini {
     visibility: visible;
     opacity: 1;
   }
 
-  /* css */
+  .about-me-image {
+    float: right;
+    margin-right: 20px;
+    margin-left: 10px;
+    width: 32%;
+  }
   header {
     flex-direction: row;
     justify-content: space-between;
