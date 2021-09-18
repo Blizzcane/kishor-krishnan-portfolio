@@ -351,4 +351,114 @@ section.skills div.logo-container figure.figure-skills {
   section.skills div.logo-container figure.figure-skills img {
     width: 100%;
   }
+
+  section.projects {
+    display: block;
+  }
+  
+  section.projects div.project-container {
+    margin-bottom: 5%;
+    margin-top: 2%;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  section.projects div.project-container:last-child {
+    border-bottom: 0;
+  }
+  
+  section.projects div.project-container h4 {
+    margin-bottom: 15px;
+    font-size: 120%;
+  }
+  
+  section.projects div.project-container div.project-column {
+    display: inline-block;
+    width: 48%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    padding-left: 20px;
+  }
+  
+  section.projects div.project-container div.project-column img {
+    width: 100%;
+  }
+  
+  section.projects div.project-container div.project-column ul.project-skills {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    font-size: 80%;
+  }
+  
+  section.projects div.project-container div.project-column ul.project-skills li {
+    display: inline-block;
+    width: auto;
+    padding: 5px 10px;
+    margin-top: 3px;
+    border: 1px solid #ddd;
+  }
+  
+  section.projects div.project-container div.project-column ul.project-buttons {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    list-style-type: none;
+  }
+  
+  section.projects
+    div.project-container
+    div.project-column
+    ul.project-buttons
+    li {
+    display: inline-block;
+    width: auto;
+  }
+  
+  section.projects
+    div.project-container
+    div.project-column
+    ul.project-buttons
+    li
+    a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #163a8b;
+    color: white;
+    text-decoration: none;
+  }
+  
+  section.projects
+    div.project-container
+    div.project-column
+    ul.project-buttons
+    li
+    a:hover {
+    background-color: #081e6f;
+  }
+  
+  section.project div.project-container .project-image {
+    width: 65%;
+    min-width: 280px;
+  }
+  
+  section.project div.project-container .app-description {
+    text-align: center;
+    padding: 5%;
+  }
+  
+  section.project div.project-container .fab {
+    font-size: x-large;
+  }
+  
+  section.project div.project-container .fas {
+    margin-bottom: 5%;
+  }
+  
 }
