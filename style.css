@@ -1,6 +1,6 @@
 body {
   background-color: #339989;
-  color: #fffafb;
+  /* color: #fffafb; */
   font-family: "Chakra Petch", sans-serif;
   width: 100%;
   margin: 0px;
@@ -72,6 +72,7 @@ header h1 {
   text-align: center;
   font-size: 40px;
   padding-top: 20px;
+  /* text-shadow: 2px 2px 8px #000000; */
   margin: 0;
 }
 
@@ -113,7 +114,7 @@ header nav ul li:last-child a {
   display: block;
   margin-bottom: 5%;
   margin-top: 2%; 
-}
+} 
 
 footer {
   background-color: #2a2b2f;
@@ -253,6 +254,10 @@ button:hover {
   border: 3px solid rgb(45, 255, 220);
 }
 
+section.skills div.logo-container figure.figure-skills {
+  width: 45%;
+}
+
 
 
 
@@ -331,5 +336,19 @@ button:hover {
     flex-direction: row;
     margin: -7% auto 20px auto;
     position: relative;
+  }
+
+  
+
+  section.skills div.logo-container figure.figure-skills {
+    display: inline-block;
+    width: 22%;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+  }
+  
+  section.skills div.logo-container figure.figure-skills img {
+    width: 100%;
   }
 }
