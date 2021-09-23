@@ -1,6 +1,6 @@
 body {
   background-color: #339989;
-  /* color: #fffafb; */
+  color: #000000;
   font-family: "Chakra Petch", sans-serif;
   width: 100%;
   margin: 0px;
@@ -110,11 +110,11 @@ header nav ul li:last-child a {
   border-radius: 30px;
 }
 
-.project-container{
+.project-container {
   display: block;
   margin-bottom: 5%;
-  margin-top: 2%; 
-} 
+  margin-top: 2%;
+}
 
 footer {
   background-color: #2a2b2f;
@@ -255,11 +255,128 @@ button:hover {
 }
 
 section.skills div.logo-container figure.figure-skills {
+  display: inline-block;
+  text-align: center;
+  padding: 2%;
+  margin: 1%;
   width: 45%;
 }
 
 
+section.projects {
+  display: block;
+}
 
+section.projects div.project-container {
+  margin-bottom: 5%;
+  margin-top: 2%;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+section.projects div.project-container:last-child {
+  border-bottom: 0;
+}
+
+section.projects div.project-container h4 {
+  margin-bottom: 15px;
+  font-size: 120%;
+}
+
+section.projects div.project-container div.project-column {
+  display: inline-block;
+  width: 48%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+section.projects div.project-container div.project-column img {
+  width: 100%;
+}
+
+section.projects div.project-container div.project-column ul.project-skills {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+  font-size: 80%;
+}
+
+section.projects
+  div.project-container
+  div.project-column
+  ul.project-skills
+  li {
+  display: inline-block;
+  width: auto;
+  padding: 5px 10px;
+  margin-top: 3px;
+  border: 1px solid #ddd;
+}
+
+section.projects div.project-container div.project-column ul.project-buttons {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+section.projects
+  div.project-container
+  div.project-column
+  ul.project-buttons
+  li {
+  display: inline-block;
+  width: auto;
+}
+
+section.projects
+  div.project-container
+  div.project-column
+  ul.project-buttons
+  li
+  a {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #163a8b;
+  color: white;
+  text-decoration: none;
+}
+
+section.projects
+  div.project-container
+  div.project-column
+  ul.project-buttons
+  li
+  a:hover {
+  background-color: #081e6f;
+}
+
+section.project div.project-container .project-image {
+  width: 65%;
+  min-width: 280px;
+}
+
+section.project div.project-container .app-description {
+  text-align: center;
+  padding: 5%;
+}
+
+section.project div.project-container .fab {
+  font-size: x-large;
+}
+
+section.project div.project-container .fas {
+  margin-bottom: 5%;
+}
 
 @media all and (min-width: 800px) {
   .houdini {
@@ -338,127 +455,16 @@ section.skills div.logo-container figure.figure-skills {
     position: relative;
   }
 
-  
-
-  section.skills div.logo-container figure.figure-skills {
-    display: inline-block;
-    width: 22%;
-    text-align: center;
-    padding: 2%;
-    margin: 1%;
+  section.skills div.logo-container figure.figure-skills { 
+    width: 18%; 
   }
-  
+
   section.skills div.logo-container figure.figure-skills img {
     width: 100%;
   }
 
-  section.projects {
-    display: block;
+  section.projects div.project-container { 
+    flex-direction: row;
   }
-  
-  section.projects div.project-container {
-    margin-bottom: 5%;
-    margin-top: 2%;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  section.projects div.project-container:last-child {
-    border-bottom: 0;
-  }
-  
-  section.projects div.project-container h4 {
-    margin-bottom: 15px;
-    font-size: 120%;
-  }
-  
-  section.projects div.project-container div.project-column {
-    display: inline-block;
-    width: 48%;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-    margin-bottom: 1rem;
-    vertical-align: top;
-    padding-left: 20px;
-  }
-  
-  section.projects div.project-container div.project-column img {
-    width: 100%;
-  }
-  
-  section.projects div.project-container div.project-column ul.project-skills {
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    list-style-type: none;
-    font-size: 80%;
-  }
-  
-  section.projects div.project-container div.project-column ul.project-skills li {
-    display: inline-block;
-    width: auto;
-    padding: 5px 10px;
-    margin-top: 3px;
-    border: 1px solid #ddd;
-  }
-  
-  section.projects div.project-container div.project-column ul.project-buttons {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    list-style-type: none;
-  }
-  
-  section.projects
-    div.project-container
-    div.project-column
-    ul.project-buttons
-    li {
-    display: inline-block;
-    width: auto;
-  }
-  
-  section.projects
-    div.project-container
-    div.project-column
-    ul.project-buttons
-    li
-    a {
-    display: block;
-    width: 100%;
-    padding: 10px 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #163a8b;
-    color: white;
-    text-decoration: none;
-  }
-  
-  section.projects
-    div.project-container
-    div.project-column
-    ul.project-buttons
-    li
-    a:hover {
-    background-color: #081e6f;
-  }
-  
-  section.project div.project-container .project-image {
-    width: 65%;
-    min-width: 280px;
-  }
-  
-  section.project div.project-container .app-description {
-    text-align: center;
-    padding: 5%;
-  }
-  
-  section.project div.project-container .fab {
-    font-size: x-large;
-  }
-  
-  section.project div.project-container .fas {
-    margin-bottom: 5%;
-  }
-  
+
 }

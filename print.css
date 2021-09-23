@@ -59,7 +59,13 @@
     padding: 0px;
     border-right: 0px;
   }
-
+  
+  header nav ul li a {
+    color: #000000;
+    /* text-shadow: 2px 2px 8px #7de2d1; */
+    text-decoration: none;
+    margin: 0 20px 0 0;
+}
   .skills {
     page-break-after: always;
   }
@@ -75,4 +81,6 @@
   footer a i.far {
     display: none;
   }
+
+  
 }
