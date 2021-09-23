@@ -281,7 +281,7 @@ section.projects div.project-container:last-child {
 
 section.projects div.project-container h4 {
   margin-bottom: 15px;
-  font-size: 120%;
+  font-size: 125%;
 }
 
 section.projects div.project-container div.project-column {
@@ -292,7 +292,11 @@ section.projects div.project-container div.project-column {
   margin-bottom: 1rem;
   vertical-align: top;
   padding-left: 20px;
+  
 }
+section.projects img{
+  border-radius: 10px;
+} 
 
 section.projects div.project-container div.project-column img {
   width: 100%;
@@ -304,7 +308,7 @@ section.projects div.project-container div.project-column ul.project-skills {
   margin-top: 20px;
   margin-bottom: 20px;
   list-style-type: none;
-  font-size: 80%;
+  font-size: 90%;
 }
 
 section.projects
@@ -316,7 +320,10 @@ section.projects
   width: auto;
   padding: 5px 10px;
   margin-top: 3px;
-  border: 1px solid #ddd;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;  
 }
 
 section.projects div.project-container div.project-column ul.project-buttons {
@@ -344,9 +351,9 @@ section.projects
   display: block;
   width: 100%;
   padding: 10px 20px;
-  border: 1px solid #ddd;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
-  background-color: #163a8b;
+  background-color: #00378a;
   color: white;
   text-decoration: none;
 }
@@ -416,7 +423,7 @@ section.project div.project-container .fas {
     align-items: center;
   }
   section {
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
   }
   .darker {
