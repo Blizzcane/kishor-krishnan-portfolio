@@ -82,5 +82,11 @@
     display: none;
   }
 
-  
+  section.skills div.logo-container figure.figure-skills {
+    display: inline-block;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    width: 18%;
+  }
 }
