@@ -38,7 +38,17 @@
   header {
     background-image: none;
     height: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
+
+  headline {
+    position: relative;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    padding: 0px;
+  }
+
   header h1 {
     display: none;
   }
@@ -88,7 +98,7 @@
   }
 
   #about img {
-    width: 300px;
+    width: 275px;
   }
 
   
@@ -101,6 +111,11 @@
   p {
     color: black;
   }
+
+  section{ 
+    padding: 0px;
+  }
+
   section.projects {
     display: block;
   }
