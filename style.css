@@ -429,7 +429,7 @@ section.project div.project-container .fas {
   }
   .group {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .group-projects {
