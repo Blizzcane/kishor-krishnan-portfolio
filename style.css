@@ -24,6 +24,11 @@ section {
   text-align: left;
 }
 
+#about{
+  overflow: auto; 
+}
+
+
 section h2 {
   margin-bottom: 20px;
 }
@@ -261,7 +266,7 @@ section.skills div.logo-container figure.figure-skills {
   text-align: center;
   padding: 2%;
   margin: 1%;
-  width: 45%;
+  width: 43%;
 }
         
     
@@ -290,7 +295,8 @@ section.projects div.project-container {
   margin-top: 2%;
   border-bottom: 1px solid #ccc;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  
 }
 
 section.projects div.project-container:last-child {
@@ -298,13 +304,14 @@ section.projects div.project-container:last-child {
 }
 
 section.projects div.project-container h4 {
+  margin-top: 0px;
   margin-bottom: 15px;
   font-size: 125%;
 }
 
 section.projects div.project-container div.project-column {
   display: inline-block;
-  width: 48%;
+  width: 90%;
   margin-left: 0.5%;
   margin-right: 0.5%;
   margin-bottom: 1rem;

@@ -50,7 +50,7 @@
   }
 
   header h1 {
-    display: none;
+    color: black;
   }
 
   header nav {
@@ -99,9 +99,7 @@
 
   #about img {
     width: 275px;
-  }
-
-  
+  } 
 
   h4 {
     color: black;
