@@ -30,11 +30,7 @@ section {
 
 section h2 {
   margin-bottom: 20px;
-}
-headline {
-  position: relative;
-  text-align: center;
-}
+} 
 
 .houdini {
   visibility: hidden;
@@ -368,8 +364,7 @@ section.projects
   div.project-column
   ul.project-buttons
   li
-  a {
-  display: block;
+  a { 
   width: 100%;
   padding: 10px 20px;
   border: 2px solid rgb(0, 0, 0);
@@ -378,6 +373,7 @@ section.projects
   color: white;
   text-decoration: none;
 }
+
 
 section.projects
   div.project-container
