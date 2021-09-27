@@ -38,20 +38,22 @@
   header {
     background-image: none;
     height: auto;
+    background-color: white;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    flex-direction: row;
+    text-align: left;  
   }
-
-  headline {
-    position: relative;
-    text-align: center;
-    color:rgb(0, 0, 0);
-    padding: 0px;
-  }
+ 
 
   header h1 {
     color: black;
   }
+
+  .print-name {
+    margin-right: 50px;
+  }
+ 
 
   header nav {
     position: relative;
@@ -99,6 +101,7 @@
 
   #about img {
     width: 275px;
+    padding-right: 20px;
   } 
 
   h4 {
