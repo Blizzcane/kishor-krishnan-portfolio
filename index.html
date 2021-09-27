@@ -1,314 +1,373 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Kishor Krishnan Portfolio</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <header class="header">
-      <h1 class="logo headline">Kishor Krishnan</h1>
-      <nav class="menu">
-        <ul id="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!-- Introduction -->
-      <section id="home" style="margin-top: 0px">
-        <div class="group">
-          <div class="item headline">
-            <div class="centeredText">
-              <h1>[Creativity]</h1>
-              <h1>[Innovation]</h1>
-              <h1>[Growth]</h1>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="keywords"
+      content="fullstack developer, full-stack developer, full stack developer, HTML, HTML5, CSS, CSS3, JavaScript, jQuery, Node.js, Express, Postman, Postgres, Knex, Mocha, Chai, Heroku, GitHub, Dbeaver, React">
+      <meta name="robots" content="index, follow">
+      <meta name="language" content="English">
+      <meta name="revisit-after" content="3 days">
+      <meta name="author" content="Kishor Krishnan"> 
+      <title>Kishor Krishnan - Full Stack Developer - Portfolio</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
+         rel="stylesheet"
+         />
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link href="print.css" rel="stylesheet" media="print" />
+   </head>
+   <body>
+      <header class="header" id="top">
+         <div>
+            <h1 class="logo headline show-web-only">Kishor Krishnan</h1>
+         </div>
+         
+         <nav class="">
+            <ul id="menu">
+               <li class="show-web-only"><a href="#home">Home</a></li>
+               <li class="show-web-only"><a href="#about">About</a></li>
+               <li class="show-web-only"><a href="#skills">Skills</a></li>
+               <li class="show-web-only"><a href="#projects">Projects</a></li>
+               <li class="show-web-only"><a href="#contact">Contact</a></li>
+               <h1 class="logo print-name show-print-only">Kishor Krishnan</h1>
+               <div> 
+                
+                    <li class="show-print-only">
+                    <a href="https://blizzcane.github.io/kishor-krishnan-portfolio/">Portfolio Page: blizzcane.github.io/kishor-krishnan-portfolio/
+                    </a>
+                    </li>
+                    <li class="show-print-only">
+                        <a href="mailto:blizzcane@gmail.com?subject=Responding%20to%20Your%20Portfolio!">
+                            Blizzcane@gmail.com
+                        </a>
+                    </li>
+                    <li class="show-print-only">
+                        <a href="https://github.com/Blizzcane">
+                            Github.com/Blizzcane
+                        </a>
+                    </li>
+                    <li class="show-print-only">
+                        <a href="https://www.linkedin.com/in/kishor-krishnan/">
+                            www.linkedin.com/in/kishor-krishnan/
+                        </a>
+                    </li>  
+               </div>
+               
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <!-- Introduction -->
+         <section id="home" style="margin-top: 0px" class="show-web-only">
+            <div class="group">
+               <div class="item headline">
+                  <div class="centeredText">
+                     <h1>[Creativity]</h1>
+                     <h1>[Innovation]</h1>
+                     <h1>[Growth]</h1>
+                  </div>
+                  <img src="images/headline.png" />
+               </div>
             </div>
-
-            <img src="images/headline.png" />
-          </div>
-        </div>
-      </section>
-      <hr class="houdini" />
-      <!-- About me -->
-      <section id="about" class="darker">
-        <h2>About me</h2>
-        <div class="group">
-          <div class="item-double">
-            <p>
-              I have always been passionate about coding. I am a person that
-              thrives in a collaborative environment where I can use my skills
-              to contribute to the succes of my team.
-            </p>
-            <p>
-              When I'm not coding, I spend my time painting. I have been drawing
-              since I was young and recently have discovered the amazing world
-              of watercolor painting! I also enjoy flying my drone and taking
-              photographs. You can see examples of my photography on my
-              <a href="https://www.instagram.com/blizzcane">instagram</a>.
-            </p>
-          </div>
-          <div class="item">
-            <!--image--><img
-              class="round"
-              alt="kishor"
-              src="images/profile.png"
-            />
-          </div>
-        </div>
-      </section>
-
-      <hr class="houdini" />
-      <!-- Projects -->
-      <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="container" id="blur">
-          <div class="card">
-            <div class="box" onclick="toggle('.flashcard')">
-              <div class="content">
-                <h3>Flashcard-o-matic</h3>
-                <img
-                  src="images/HomePage.png"
-                  alt="Flashcard-o-matic Preview"
-                  class="card-image"
-                />
-                <p class="reverse-view">
-                  Front-end React app to help users study decks of flash cards.
-                </p>
-                <h3 class="view">View Project</h3>
-              </div>
+         </section>
+         <hr class="houdini show-web-only" />
+         <!-- About me -->
+         <section id="about"  >
+            <h2>About <img
+               class="about-me-image"
+               alt="kishor"
+               src="images/profile.png"
+               /></h2>
+            <div  >
+               <p>
+                  I have always been passionate about coding. I am a person that
+                  thrives in a collaborative environment where I can use my skills
+                  to contribute to the succes of my team.
+               </p>
+               <p>
+                  When I'm not coding, I spend my time painting. I have been drawing
+                  since I was young and recently have discovered the amazing world
+                  of watercolor painting!</a>.
+               </p>
             </div>
-          </div>
-          <div class="card">
-            <div class="box" onclick="toggle('.welovemovies')">
-              <div class="content">
-                <h3>WeLoveMovies</h3>
-                <img
-                  src="images/WeLoveMovies.PNG"
-                  alt="WeLoveMovies Preview"
-                  class="card-image"
-                />
-                <p class="reverse-view">
-                  Built an API using RESTful design principles.
-                </p>
-              </div>
+         </section>
+        </br> 
+        </br> 
+        <hr class="houdini show-web-only" /> 
+         <section class="skills" id="skills">
+            <h2>  Skills</h2>
+            <div class="logo-container">
+                <figure class="figure-skills">
+                    <img class="logo html" src="images/iconfinder_HTML.png" alt="html logo">
+                    <figcaption>HTML 5</figcaption>
+                </figure>
+                <figure class="figure-skills">
+                    <img class="logo" src="images/iconfinder_css3.png" alt="css logo">
+                    <figcaption>CSS 3</figcaption>
+                </figure>
+                <figure class="figure-skills">
+                    <img class="logo" style="margin-left: 0;" src="images/JS.png" alt="JavaScript logo">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure class="figure-skills">
+                  <img class="logo" src="images/express-logo.png" alt="express logo">
+                  <figcaption>Express</figcaption>
+              </figure>
+                <figure class="figure-skills">
+                    <img class="logo" src="images/iconfinder_React.js.png" alt="react logo">
+                    <figcaption>React.js</figcaption>
+                </figure>
+                <figure class="figure-skills">
+                    <img class="logo" src="images/iconfinder_Node_Js.png" alt="node logo">
+                    <figcaption>Node.js</figcaption>
+                </figure>  
+               <figure class="figure-skills">
+                    <img class="logo" src="images/postgres-logo.png" alt="postgres logo">
+                    <figcaption>Postgres</figcaption>
+                </figure>
+                <figure class="figure-skills">
+                    <img class="logo" src="images/heroku-logo.png" alt="heroku logo">
+                    <figcaption>Heroku</figcaption>
+                </figure>
+                <figure class="figure-skills">
+                    <img class="logo" src="images/mocha-logo.png" alt="mocha logo">
+                    <figcaption>Mocha</figcaption>
+                </figure>
+                <figure class="figure-skills">
+                    <img class="logo" src="images/chai-logo.png" alt="chai logo">
+                    <figcaption>Chai</figcaption>
+                </figure>
+                <figure class="figure-skills">
+                    <img class="logo" src="images/git.png" alt="git logo">
+                    <figcaption>Git</figcaption>
+                 </figure>
+                <figure class="figure-skills">
+                    <img class="logo" src="images/github-logo.png" alt="github logo">
+                    <figcaption>Github</figcaption>
+                </figure>
             </div>
-          </div>
-          <div class="card">
-            <div class="box" onclick="toggle('.reservations')">
-              <div class="content">
-                <h3>Restaurant Reservations</h3>
-                <img
-                  src="images/us-01-submit-after.png"
-                  alt="preview of Reservations"
-                  class="card-image"
-                />
-                <p>Full Stack App to reserve seats</p>
-                <h3 class="view">View Project</h3>
-              </div>
-            </div>
-          </div>
-        </div>
+        </section>
+    </br> 
+        <hr class="houdini show-web-only" /> 
 
-        <!-- popup project details -->
-        <div class="flashcard" id="popup">
-          <div class="content">
-            <div class="item">
-              <img
-                src="images/HomePage.png"
-                alt="Flashcard-o-matic app"
-                class="rounded"
-              />
-              <p>
-                This application can be used to create and edit decks of flash
-                cards to help users study. Created with React router and React
-                Hooks such as useEffect, useState.
-              </p>
-              <p>create-react-app &bull; Bootstrap v5</p>
-              <div class="details">
-                <div style="display: flex; flex-direction: row">
-                  <a
-                    href="https://flashcards-project-neon.vercel.app/"
-                    target="blank"
-                    ><span>Launch Site</span></a
-                  >
-                  <a
-                    href="https://github.com/Blizzcane/Flashcards-Project"
-                    target="blank"
-                    ><span>View Code</span></a
-                  >
+         <!-- Projects -->
+         <section class="projects" id="projects">
+            <h2>
+                <i class="fa fa-briefcase"></i> 
+                Projects
+            </h2>
+    
+    
+            <div class="restaurant-container project-container item">
+                <div class="project-column">
+                    <a href="https://restaurant-reservations-sigma.vercel.app/" target="_blank">
+                        <img class="reservation project-image" src="./images/restaurants.png" alt="Reserve a Table">
+                    </a>
                 </div>
-              </div>
-
-              <button onclick="toggle('.flashcard')"><span>Close</span></button>
-            </div>
-          </div>
-        </div>
-        <div class="welovemovies" id="popup">
-          <div class="content">
-            <div class="item">
-              <img
-                src="images/WeLoveMovies.PNG"
-                alt="welovemovies preview"
-                class="rounded"
-              />
-              <p>
-                Created a server to display responses and make changes to an API
-                connected to a PostgreSQL database. Built using:
-              </p>
-              <p style="margin-bottom: 20px">
-                Node.js &bull; Knex.js &bull; Express.js &bull; PostgreSQL
-                &bull; CORS
-              </p>
-              <div class="details">
-                <div style="display: flex; flex-direction: row">
-                  <a
-                    href="https://starter-movie-front-end-sandy.vercel.app/"
-                    target="blank"
-                    ><span>Launch Site</span></a
-                  >
-                  <a
-                    href="https://github.com/Blizzcane/WeLoveMovies"
-                    target="blank"
-                    ><span>View Code</span></a
-                  >
+    
+                <div class="project-column">
+                    <h4>Restaurant Reservation System</h4>
+                    <p class="app-description">
+                        A full stack reservation app that can create, update, and delete reservations from a PostgreSQL database.
+                        <span class="show-web-only">
+                            Users can manage reservations and tables.
+                        </span>
+                    </p>
+                    <ul class="project-skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>Postgres</li>
+                        <li>Bootstrap</li>
+                        <li>Heroku</li>
+                        <li>Vercel</li>
+                    </ul>
+                    <ul class="project-buttons show-web-only">
+                        <li>
+                            <a href="https://restaurant-reservations-sigma.vercel.app/" target="_blank">
+                                <i class="fas fa-desktop"></i>
+                                Demo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Blizzcane/Restaurant-Reservations" target="_blank">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </li>                    
+                    </ul>
+                    <ul class="project-buttons show-print-only">
+                        <li>
+                            <i class="fas fa-desktop"></i> https://restaurant-reservations-sigma.vercel.app/
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i> https://github.com/Blizzcane/Restaurant-Reservations
+                        </li>
+                    </ul>
                 </div>
-              </div>
-
-              <button onclick="toggle('.welovemovies')">
-                <span>Close</span>
-              </button>
+    
             </div>
-          </div>
-        </div>
-        <div class="reservations" id="popup">
-          <div class="content">
-            <div class="item">
-              <img
-                src="images/us-01-submit-after.png"
-                alt="Reservations app"
-                class="rounded"
-              />
-              <p>
-                Created a reservation system for fine dining restaurants. 
-                This application gives users the ability to create/edit reservations, 
-                seat a reservation at a table, create tables, and search for a reservation by phone number.
-              </p>
-              <p>ReactJS &bull; Bootstrap v5 &bull; NodeJS &bull; PostgreSQL &bull; KnexJS</p>
-              <div class="details">
-                <div style="display: flex; flex-direction: row">
-                  <a
-                    href="https://restaurant-reservations-sigma.vercel.app/"
-                    target="blank"
-                    ><span>Launch Site</span></a
-                  >
-                  <a
-                    href="https://github.com/Blizzcane/Restaurant-Reservations"
-                    target="blank"
-                    ><span>View Code</span></a
-                  >
+    
+    
+            <div class="welovemovies-container project-container">
+                <div class="project-column">
+                    <a href="https://starter-movie-front-end-sandy.vercel.app/" target="_blank">
+                        <img class="movies project-image" src="./images/WeLoveMovies.png" alt="look up movie reviews">
+                    </a>
                 </div>
-              </div>
-
-              <button onclick="toggle('.reservations')"><span>Close</span></button>
+    
+                <div class="project-column">
+                    <h4>WeLoveMovies</h4>
+                    <p class="app-description">
+                        A site that allows users to view reviews from critics and theaters which are playing the selected movie.
+                        <span class="show-web-only">
+                            Users can view all of the movies for a selected theater, all theaters for a selected movie, or all reviews for a movie.
+                        </span>
+                    </p>
+                    <ul class="project-skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>Postgres</li>
+                        <li>Heroku</li>
+                        <li>Vercel</li>
+                    </ul>
+                    <ul class="project-buttons show-web-only">
+                        <li>
+                            <a href="https://starter-movie-front-end-sandy.vercel.app/" target="_blank">
+                                <i class="fas fa-desktop"></i>
+                                Demo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Blizzcane/WeLoveMovies" target="_blank">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </li>                    
+                    </ul>
+                    <ul class="project-buttons show-print-only">
+                        <li>
+                            <i class="fas fa-desktop"></i> https://starter-movie-front-end-sandy.vercel.app/
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i> https://github.com/Blizzcane/WeLoveMovies
+                        </li>
+                    </ul>
+                </div>
+    
             </div>
-          </div>
-        </div>
-      </section>
-      <hr class="houdini" />
+     
+    
+    
+            <div class="flashcards-container project-container">
+                <div class="project-column">
+                    <a href="https://flashcards-project-neon.vercel.app/" target="_blank">
+                        <img class="flashcards-app project-image" src="./images/HomePage.png" alt="Study some flashcards">
+                    </a>
+                </div>
+    
+                <div class="project-column">
+                    <h4>Flashcard-o-matic App</h4>
+                    <p class="app-description">
+                        This app allows for the creation, modification and use of text flashcards to aide in study. 
+                        <span class="show-web-only">
+                            Create, edit, and save decks of flashcards.
+                        </span>
+                    </p>
+                    <ul class="project-skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>React</li> 
+                        <li>Vercel</li>
+                    </ul>
+                    <ul class="project-buttons show-web-only">
+                        <li>
+                            <a href="https://flashcards-project-neon.vercel.app/" target="_blank">
+                                <i class="fas fa-desktop"></i>
+                                Demo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Blizzcane/Flashcards-Project" target="_blank">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </li>                    
+                    </ul>
+                    <ul class="project-buttons show-print-only">
+                        <li>
+                            <i class="fas fa-desktop"></i> https://flashcards-project-neon.vercel.app/
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i> https://github.com/Blizzcane/Flashcards-Project
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+        </section>  
 
-      <!-- Contact -->
-      <section id="contact" class="darker">
-        <h2>Contact</h2>
-        <div class="group">
-          <div class="item">
-            <form action="https://formspree.io/f/mnqoevzo" method="POST">
-              <div>
-                <label>
-                  Name:
-                  <input type="text" name="name" />
-                </label>
-              </div>
-              <div>
-                <label>
-                  Email:
-                  <input type="email" name="_replyto" />
-                </label>
-              </div>
-              <div>
-                <label>
-                  Your message:
-                  <textarea name="message"></textarea>
-                </label>
-              </div>
-              <!-- contact methods -->
-
-              <button type="submit">Submit</button>
-            </form>
-          </div>
-          <div class="item">
-            <h3>Contact me through:</h3>
-            <p>
-              Email:
-              <a href="mailto:blizzcane@email.com">blizzcane@email.com</a>
-            </p>
-            <p>
-              GitHub:
-              <a href="https://github.com/Blizzcane"
-                >https://github.com/Blizzcane</a
-              >
-            </p>
-            <p>
-              LinkedIn:
-              <a href="https://www.linkedin.com/in/kishor-krishnan-bba981105/"
-                >Kishor Krishnan</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>
-        Follow me:
-        <a href="https://www.instagram.com/blizzcane"
-          ><img src="images/instaIcon.png"
-        /></a>
-        <a href="https://twitter.com/DarkFlarePrince"
-          ><img src="images/twitterIcon.png"
-        /></a>
-        <a href="https://www.linkedin.com/in/kishor-krishnan-bba981105/"
-          ><img src="images/linkedIcon.png"
-        /></a>
-      </p>
-    </footer>
-    <script type="text/javascript">
-      function toggle(project) {
-        let blur = document.getElementById("blur");
-        let popup = document.querySelector(project);
-        // prevents scrolling while popup is open
-
-        console.log(popup);
-        if (!blur.classList.value.includes("active")) {
-          document.getElementsByTagName("body")[0].style.overflow = "hidden";
-        } else {
-          document.getElementsByTagName("body")[0].style.overflow = "visible";
-        }
-        blur.classList.toggle("active");
-        popup.classList.toggle("active");
-      }
-    </script>
-  </body>
+         <hr class="houdini show-web-only" />
+         <!-- Contact -->
+         <section id="contact" class="darker show-web-only">
+            <h2>Contact</h2>
+            <div class="group">
+               <div class="item">
+                  <form action="https://formspree.io/f/mnqoevzo" method="POST">
+                     <div>
+                        <label>
+                        Name:
+                        <input type="text" name="name" />
+                        </label>
+                     </div>
+                     <div>
+                        <label>
+                        Email:
+                        <input type="email" name="_replyto" />
+                        </label>
+                     </div>
+                     <div>
+                        <label>
+                        Your message:
+                        <textarea name="message"></textarea>
+                        </label>
+                     </div>
+                     <!-- contact methods -->
+                     <button type="submit">Submit</button>
+                  </form>
+               </div>
+               <div class="item"> 
+                  <p> 
+                     <a href="mailto:blizzcane@gmail.com">Email Me</a>
+                  </p>
+                  <p>
+                     GitHub:
+                     <a href="https://github.com/Blizzcane"
+                        >https://github.com/Blizzcane</a
+                        >
+                  </p>
+                  <p>
+                     LinkedIn:
+                     <a href="https://www.linkedin.com/in/kishor-krishnan-bba981105/"
+                        >Kishor Krishnan</a
+                        >
+                  </p>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="show-web-only">
+       <h4>© 2021 Kishor Krishnan</h4>
+      </footer>
+   </body>
 </html>
